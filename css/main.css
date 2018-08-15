@@ -1,6 +1,7 @@
 h1 {
     font-size: 300%;
     font-family:'Avenir Next', 'Helvetica', 'Arial';
+    color: #3B3B3B;
     font-weight: bold;
     margin-left: 20%;
     margin-right: 20%;
@@ -11,23 +12,24 @@ p {
     font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
     margin-left: 20%;
     margin-right: 20%;
+    color: #3B3B3B;
 }
 ul {
-    font-size: 125%;
+    font-size: 110%;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
     list-style-type: none;
     margin: 0px;
 }
 li {
-    font-weight: 500;
-    float: right;
+    font-weight: 480;
+    float: left;
     margin: 0px;
 }
 li a {
     display: block;
     color: #FFFFFF;
     text-align: center;
-    padding: 20px 40px 20px 40px;
+    padding: 17px 26px 17px 10px;
     text-decoration: none;
 }
 li a:hover {
@@ -37,14 +39,11 @@ li a:hover {
     width: 30%;
     float: left;
     /* margin-top: 10%; */
+    margin-top: 10%;
     margin-right: 10%;
     /*margin-bottom: 20px;*/
     margin-left: 10%;
 }
-.text-box-home {
-    margin-right: 10%;
-}
-
 .menu {
     /* list-style-type: none; */
     margin-top: 0;
