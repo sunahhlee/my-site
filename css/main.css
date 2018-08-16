@@ -26,7 +26,7 @@
 .smaller-home-image {
     width: 30%;
     float: left;
-    margin: 6% 7% 6% 10%;
+    margin: 1% 7% 6% 13%;
     padding: 0%;
 }
 
@@ -42,6 +42,6 @@ h1 {
     font-size: 105%;
     font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
     color: #3B3B3B;
-    margin: 3% 10% 0% 0%; /*don't change left padding -- fix w/ responsiveness*/
+    margin: 2% 10% 0% 0%; /*don't change left padding -- fix w/ responsiveness*/
     padding: 0%;
 }
