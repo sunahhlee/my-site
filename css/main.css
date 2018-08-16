@@ -14,19 +14,7 @@ p {
     margin-left: 20%;
     margin-right: 20%; */
 }
-li a {
-    font-weight: 480;
-    float: left;
-    margin: 0px;
-    display: block;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 17px 26px 17px 26px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #A2ADBF;
-}
+
 .smaller-home-image {
     width: 30%;
     margin-right: 10%;
@@ -34,13 +22,25 @@ li a:hover {
     padding-top: 40px;
     float: left;
 }
-.menu {
-    /* list-style-type: none; */
-    padding-left: 50%;
-    margin: 0px;
+.navbar {
     background-color: #C6CDDB;
     overflow: hidden;
+}
+
+.navbar a {
     font-size: 110%;
+    font-weight: 480;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    color: #FFFFFF;
+
+    text-align: center;
+    display: block;
+    float: left;
     list-style-type: none;
+    padding: 17px 26px 17px 26px;
+    margin: 0px;
+}
+
+.navbar a:hover {
+    background-color: #A2ADBF;
 }
