@@ -3,26 +3,20 @@ h1 {
     font-family:'Avenir Next', 'Helvetica', 'Arial';
     color: #3B3B3B;
     font-weight: bold;
+    margin-top: 30%;
+
 }
-p {
-    font-size: 100%;
+.p-home {
+    font-size: 105%;
     font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
     color: #3B3B3B;
     margin-left: 10%;
-    margin-top: 30%;
 }
 
-.smaller-home-image {
-    width: 30%;
-    margin-right: 10%;
-    margin-left: 7%;
-    padding-top: 6%;
-    float: left;
-}
 .navbar {
     background-color: #C6CDDB;
     overflow: hidden;
-    padding-left: 25%;
+    padding-left: 40%;
 }
 
 .navbar a {
@@ -42,4 +36,12 @@ p {
 
 .navbar a:hover {
     background-color: #A2ADBF;
+}
+
+.smaller-home-image {
+    width: 30%;
+    margin-right: 10%;
+    margin-left: 7%;
+    padding-top: 6%;
+    float: left;
 }
