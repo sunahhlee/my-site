@@ -35,15 +35,13 @@ h1 {
     font-family:'Avenir Next', 'Helvetica', 'Arial';
     color: #3B3B3B;
     font-weight: bold;
-    float: right;
-    margin: 0%;
-    padding: 20% 0% 0% 0%;
+    margin: 5% 0% 0% 0%;
+    padding: 0%;
 }
 .p-home {
     font-size: 105%;
     font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
     color: #3B3B3B;
     margin: 2% 10% 0% 0%; /*don't change left padding -- fix w/ responsiveness*/
-    float: right;
     padding: 0%;
 }
