@@ -3,22 +3,21 @@ h1 {
     font-family:'Avenir Next', 'Helvetica', 'Arial';
     color: #3B3B3B;
     font-weight: bold;
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
 }
 p {
     font-size: 100%;
     font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
     color: #3B3B3B;
+    /*
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 20%; */
 }
-li {
+li a {
     font-weight: 480;
     float: left;
     margin: 0px;
-}
-li a {
     display: block;
     color: #FFFFFF;
     text-align: center;
@@ -32,7 +31,8 @@ li a:hover {
     width: 30%;
     margin-right: 10%;
     margin-left: 10%;
-    padding-top: 30px;
+    padding-top: 40px;
+    float: left;
 }
 .menu {
     /* list-style-type: none; */
