@@ -1,22 +1,7 @@
-h1 {
-    font-size: 300%;
-    font-family:'Avenir Next', 'Helvetica', 'Arial';
-    color: #3B3B3B;
-    font-weight: bold;
-    margin-top: 30%;
-
-}
-.p-home {
-    font-size: 105%;
-    font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
-    color: #3B3B3B;
-    margin-left: 10%;
-}
-
 .navbar {
     background-color: #C6CDDB;
     overflow: hidden;
-    padding-left: 40%;
+    padding-left: 42%;
 }
 
 .navbar a {
@@ -40,8 +25,20 @@ h1 {
 
 .smaller-home-image {
     width: 30%;
-    margin-right: 10%;
-    margin-left: 7%;
-    padding-top: 6%;
+    margin: 6% 7% 0% 10%;
     float: left;
+}
+
+h1 {
+    font-size: 300%;
+    font-family:'Avenir Next', 'Helvetica', 'Arial';
+    color: #3B3B3B;
+    font-weight: bold;
+    margin: 20% 0% 0% 0%;
+}
+.p-home {
+    font-size: 105%;
+    font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
+    color: #3B3B3B;
+    margin: 5% 20% 0% 0%;
 }
