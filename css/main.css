@@ -53,6 +53,11 @@
     .navbar.responsive {
         position: relative;
     }
+    .navbar.responsive .triplebar {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
     .navbar.responsive a {
         float: none;
         display: block;
