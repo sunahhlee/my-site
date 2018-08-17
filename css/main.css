@@ -19,6 +19,24 @@
     margin: 0px;
 }
 
+/*when screen >601 px, hide triplebar*/
+@media screen and (min-width: 601px) {
+    .navbar .triplebar {
+        display: none;
+    }
+}
+
+/*when screen <600 px, hide rest, show triplebar*/
+@media screen and (max-width: 600px) {
+    .navbar a:not(.triplebar) {
+        display: none;
+    }
+    .navbar a.triplebar {
+        display: block;
+        float: right;
+    }
+}
+
 .navbar a:hover {
     background-color: #A2ADBF;
 }
