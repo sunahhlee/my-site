@@ -19,10 +19,22 @@
     margin: 0px;
 }
 
+.navbar a:first-child {
+    padding-left: 0px;
+}
+
 /*when screen >601 px, hide triplebar*/
 @media screen and (min-width: 601px) {
     .navbar .triplebar {
         display: none;
+    }
+}
+
+/* screen starting to get smaller, make position relative*/
+@media screen and (max-width: 900px) {
+    .navbar {
+        position: relative;
+        display: inline-block;
     }
 }
 
