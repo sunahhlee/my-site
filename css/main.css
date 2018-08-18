@@ -38,24 +38,22 @@
     margin: 0px;
 }
 
-/*
-.navbar .triplebar {
+.navbar .navbar-links .triplebar {
     display: none;
 }
-*/
 
-/*when screen < px, hide rest, show triplebar*/
+/*when screen < px, hide rest, show triplebar
 @media screen and (min-width: 901px) {
-    .navbar .navbar-links .triplebar {
+    .navbar .triplebar {
         display: none;
     }
-}
+}*/
 
 @media screen and (max-width: 900px) {
-    .navbar .navbar-links a:not(.triplebar) {
+    .navbar a:not(.triplebar) {
         display: none;
     }
-    .navbar .navbar-links .triplebar {
+    .navbar .triplebar {
         display: inline-block;
         float: right;
     }
