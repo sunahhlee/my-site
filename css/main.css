@@ -1,7 +1,7 @@
 .navbar {
     background-color: #C6CDDB;
     overflow: hidden;
-    /*position: relative;*/
+    position: relative;
     width: 100%;
 }
 
@@ -19,15 +19,12 @@
     padding: 17px;
 }
 
-/*
 .navbar .navbar-links {
     display: inline;
     float: right;
 }
-*/
 
 .navbar .navbar-links a {
-    float: right;
     font-size: 110%;
     font-weight: 480;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
