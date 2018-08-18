@@ -43,6 +43,12 @@
 }
 
 /*when screen < px, hide rest, show triplebar*/
+@media screen and (min-width: 901px) {
+    .navbar .triplebar {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .navbar a:not(.triplebar) {
         display: none;
