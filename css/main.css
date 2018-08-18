@@ -40,8 +40,8 @@
 
 .navbar .triplebar {
     display: none;
-    padding-top: 17px;
-    padding-right: 17px;
+    padding: 17px;
+    color: #FFFFFF;
 }
 
 /*when screen < px, hide rest, show triplebar*/
@@ -52,8 +52,6 @@
     .navbar .triplebar {
         display: inline-block;
         float: right;
-        color: #FFFFFF;
-        /*padding: 17px;*/
     }
 }
 
@@ -66,11 +64,13 @@
     }
     .navbar .responsive .navbar-links {
         position: relative;
+        overflow: hidden;
+        /*
         display: block;
         width: 100%;
-        overflow: hidden;
+        */
     }
-    .navbar.responsive a {
+    .navbar .responsive a {
         float: none;
         display: block;
         text-align: left;
