@@ -38,22 +38,24 @@
     margin: 0px;
 }
 
+/*
 .navbar .triplebar {
     display: none;
 }
+*/
 
 /*when screen < px, hide rest, show triplebar*/
 @media screen and (min-width: 901px) {
-    .navbar .triplebar {
+    .navbar .navbar-links .triplebar {
         display: none;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .navbar a:not(.triplebar) {
+    .navbar .navbar-links a:not(.triplebar) {
         display: none;
     }
-    .navbar .triplebar {
+    .navbar .navbar-links .triplebar {
         display: inline-block;
         float: right;
     }
