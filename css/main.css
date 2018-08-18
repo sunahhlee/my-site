@@ -39,7 +39,16 @@
 }
 
 .navbar .navbar-links .triplebar {
+    font-size: 110%;
+    font-weight: 480;
+    font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    color: #FFFFFF;
+
     display: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 17px 23px 17px 23px;
+    margin: 0px;
 }
 
 /*when screen < px, hide rest, show triplebar
