@@ -50,17 +50,17 @@
 }*/
 
 @media screen and (max-width: 900px) {
-    .navbar a:not(.triplebar) {
+    .navbar .navbar-links a:not(.triplebar) {
         display: none;
     }
-    .navbar .triplebar {
+    .navbar .navbar-links .triplebar {
         display: inline-block;
         float: right;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .navbar.responsive .triplebar {
+    .navbar.responsive .navbar-links .triplebar {
         /*display: inline-block; */
         position: absolute;
         right: 0;
@@ -74,14 +74,14 @@
         width: 100%;
         */
     }
-    .navbar.responsive a {
+    .navbar.responsive .navbar-links a {
         float: none;
         display: block;
         text-align: left;
     }
 }
 
-.navbar a:hover {
+.navbar .navbar-links a:hover {
     background-color: #A2ADBF;
 }
 
