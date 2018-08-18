@@ -27,6 +27,9 @@
 }
 
 @media screen and (max-width: 1225px) {
+    .navbar {
+        position: fixed;
+    }
     .navbar a {
         position: fixed;
     }
@@ -34,6 +37,9 @@
 
 /*when screen < px, hide rest, show triplebar*/
 @media screen and (max-width: 750px) {
+    .navbar {
+        position: static;
+    }
     .navbar a:not(.triplebar) {
         display: none;
     }
