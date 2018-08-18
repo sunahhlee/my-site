@@ -11,15 +11,16 @@
 
 .navbar .navbar-header .navbar-title {
     font-size: 115%;
-    font-weight: 380;
-    font-stretch: semi-expanded;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-stretch: expanded;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
     display: inline-block;
     padding: 17px;
 }
 
 .navbar .navbar-links {
-    display; inline;
+    display: inline;
     float: right;
     font-size: 110%;
 }
@@ -38,14 +39,14 @@
 }
 
 /*when screen > px, hide triplebar*/
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 801px) {
     .navbar .triplebar {
         display: none;
     }
 }
 
 /*when screen < px, hide rest, show triplebar*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .navbar a:not(.triplebar) {
         display: none;
     }
@@ -55,8 +56,9 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .navbar .responsive .triplebar {
+        display: inline-block;
         position: absolute;
         right: 0;
         top: 0;
