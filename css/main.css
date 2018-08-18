@@ -13,10 +13,11 @@
     font-size: 115%;
     font-weight: 400;
     color: #FFFFFF;
-    font-stretch: semi-expanded;
+    font-stretch: extra-expanded;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
     display: inline-block;
-    padding: 17px;
+    padding-top: 17px;
+    padding-left: 17px;
 }
 
 .navbar .navbar-links {
@@ -39,6 +40,8 @@
 
 .navbar .triplebar {
     display: none;
+    padding-top: 17px;
+    padding-right: 17px;
 }
 
 /*when screen < px, hide rest, show triplebar*/
@@ -75,6 +78,10 @@
 }
 
 .navbar a:hover {
+    background-color: #A2ADBF;
+}
+
+.navbar .triplebar:hover {
     background-color: #A2ADBF;
 }
 
