@@ -1,18 +1,36 @@
 .navbar {
     background-color: #C6CDDB;
     overflow: hidden;
-    padding-left: 42%;
+    /*position: relative; */
+    width: 100%;
 }
 
-.navbar a {
+.navbar .navbar-header {
+    display: inline;
+}
+
+.navbar .navbar-header .navbar-title {
+    font-size: 115%;
+    font-weight: 380;
+    font-stretch: semi-expanded;
+    font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    display: inline-block;
+    padding: 17px;
+}
+
+.navbar .navbar-links {
+    display; inline;
+    float: right;
+    font-size: 110%;
+}
+
+.navbar .navbar-links a {
     font-size: 110%;
     font-weight: 480;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
     color: #FFFFFF;
 
-    text-align: center;
-    display: block;
-    float: left;
+    display: inline-block;
     text-decoration: none;
     list-style-type: none;
     padding: 17px 26px 17px 26px;
@@ -26,43 +44,41 @@
     }
 }
 
-@media screen and (max-width: 1225px) {
-    .navbar {
-        position: fixed;
-    }
-    .navbar a {
-        position: fixed;
-    }
-}
-
 /*when screen < px, hide rest, show triplebar*/
 @media screen and (max-width: 750px) {
-    .navbar {
-        position: static;
-    }
     .navbar a:not(.triplebar) {
         display: none;
     }
     .navbar a.triplebar {
-        display: block;
+        display: inline-block;
         float: right;
     }
 }
 
 @media screen and (max-width: 750px) {
-    /* .navbar.responsive {
-        position: relative;
-    }
-    .navbar.responsive .triplebar {
+    .navbar .responsive .triplebar {
         position: absolute;
         right: 0;
         top: 0;
     }
-    */
+    .navbar .responsive .navbar-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        /*
+        height: 0px;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        */
+        transition: all 0.3s ease-in;
+    }
     .navbar.responsive a {
         float: none;
         display: block;
         text-align: left;
+        width: 100%;
     }
 }
 
