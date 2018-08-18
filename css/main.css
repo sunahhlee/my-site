@@ -40,9 +40,6 @@
 
 .navbar .triplebar {
     display: none;
-    padding: 17px 23px 17px 23px;
-    font-size: 110%;
-    color: #FFFFFF;
 }
 
 /*when screen < px, hide rest, show triplebar*/
@@ -79,10 +76,6 @@
 }
 
 .navbar a:hover {
-    background-color: #A2ADBF;
-}
-
-.navbar .triplebar:hover {
     background-color: #A2ADBF;
 }
 
