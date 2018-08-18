@@ -2,8 +2,6 @@
     background-color: #C6CDDB;
     overflow: hidden;
     padding-left: 42%;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .navbar a {
@@ -28,14 +26,11 @@
     }
 }
 
-/* screen starting to get smaller, push padding */
-/*
-@media screen and (max-width: 1150px) {
-    .navbar {
-        padding-left: 5%;
+@media screen and (max-width: 1225px) {
+    .navbar a {
+        position: fixed;
     }
 }
-*/
 
 /*when screen < px, hide rest, show triplebar*/
 @media screen and (max-width: 750px) {
