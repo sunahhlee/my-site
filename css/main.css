@@ -52,19 +52,18 @@
     .navbar a:not(.triplebar) {
         display: none;
     }
-    .navbar a.triplebar {
+    .navbar .triplebar {
         display: inline-block;
         float: right;
         color: #FFFFFF;
+        padding: 17px;
     }
 }
 
 @media screen and (max-width: 900px) {
     .navbar .responsive .triplebar {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 0;
+        /*display: inline-block; */
+        position: static;
     }
     .navbar .responsive .navbar-links {
         position: absolute;
@@ -75,7 +74,7 @@
     .navbar.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: right;
         width: 100%;
     }
 }
