@@ -40,7 +40,8 @@
 
 .navbar .triplebar {
     display: none;
-    padding: 17px;
+    padding: 17px 23px 17px 23px;
+    font-size: 110%;
     color: #FFFFFF;
 }
 
