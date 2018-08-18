@@ -5,26 +5,31 @@
     width: 100%;
 }
 
+/*
 .navbar .navbar-header {
     display: inline;
 }
+*/
 
 .navbar .navbar-header .navbar-title {
     font-size: 115%;
     font-weight: 400;
     color: #FFFFFF;
-    font-stretch: expanded;
+    font-stretch: semi-expanded;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
     display: inline-block;
     padding: 17px;
 }
 
+/*
 .navbar .navbar-links {
     display: inline;
     float: right;
 }
+*/
 
 .navbar .navbar-links a {
+    float: right;
     font-size: 110%;
     font-weight: 480;
     font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
@@ -33,19 +38,19 @@
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
-    padding: 17px 26px 17px 26px;
+    padding: 17px 23px 17px 23px;
     margin: 0px;
 }
 
 /*when screen > px, hide triplebar*/
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 901px) {
     .navbar .triplebar {
         display: none;
     }
 }
 
 /*when screen < px, hide rest, show triplebar*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .navbar a:not(.triplebar) {
         display: none;
     }
@@ -55,7 +60,7 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .navbar .responsive .triplebar {
         display: inline-block;
         position: absolute;
@@ -67,10 +72,6 @@
         display: block;
         width: 100%;
         overflow: hidden;
-        height: 0px;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
     }
     .navbar.responsive a {
         float: none;
