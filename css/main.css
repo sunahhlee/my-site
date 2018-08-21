@@ -113,6 +113,15 @@ h1 {
     font-size: 105%;
     font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
     color: #3B3B3B;
-    margin: 2% 10% 0% 0%; /*don't change left padding -- fix w/ responsiveness*/
+    margin: 2% 10% 4% 0%; /*don't change left padding -- fix w/ responsiveness*/
     padding: 0%;
+}
+
+.p-home-pointers {
+    font-size: 105%;
+    font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
+    color: #3B3B3B;
+    font-weight: bold;
+    margin: 2% 10% 0% 0%; /*don't change left padding -- fix w/ responsiveness*/
+    padding-left: 8%;
 }
