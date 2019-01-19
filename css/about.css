@@ -94,34 +94,12 @@
     background-color: #A2ADBF;
 }
 
-.smaller-home-image {
-    width: 30%;
-    float: left;
-    margin: 2% 7% 0% 13%;
-    padding: 0%;
-}
-
 h1 {
     font-size: 300%;
     font-family:'Avenir Next', 'Helvetica', 'Arial';
+    text-align: center
     color: #3B3B3B;
     font-weight: bold;
     margin: 5% 0% 0% 0%;
     padding-top: 10%;
-}
-.p-home {
-    font-size: 105%;
-    font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
-    color: #3B3B3B;
-    margin: 2% 10% 4% 0%; /*don't change left padding -- fix w/ responsiveness*/
-    padding-left: 20%;
-}
-
-.p-home-pointers {
-    font-size: 125%;
-    font-family:'Avenir Next', 'Helvetica', 'Sans-Serif';
-    color: #3B3B3B;
-    font-weight: bold;
-    margin: 0% 10% 1.5% 0%;
-    padding-left: 20%;
 }
