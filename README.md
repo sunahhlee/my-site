@@ -1,2 +1,2 @@
 # sunahhlee.github.io
-personal website
+obsolete
