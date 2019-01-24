@@ -12,14 +12,23 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.1em;
+}
+
+h2 {
+    font-size: 1.9em;
 }
 
 p {
     font-size: 1.3em;
 }
 
-.container {
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container { /*holds each "page" */
     height: 100vh;
     background-color: #FFFFFF;
 }
@@ -46,8 +55,8 @@ header .container {
 
 .navbar a {
     color: #19191D;
-    text-decoration: none;
-    list-style-type: none;
+    /*text-decoration: none;
+    list-style-type: none;*/
     text-align: center;
 }
 
@@ -90,7 +99,11 @@ header.masthead {
     display: flex;*/
 }
 
-header h1, p {
+header hr {
+    margin-bottom: 25px;
+}
+
+header h1, h2, p {
     width: 100%;
 }
 
@@ -99,4 +112,18 @@ header h1, p {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+hr {
+    min-width: 50px;
+    max-width: 50px;
+    border-width: 2pt;
+    border-color: #19191D;
+}
+
+#header-down-btn {
+    width: 100%;
+    color: #19191D;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
