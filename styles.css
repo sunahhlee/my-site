@@ -1,0 +1,102 @@
+body {
+    height: 100%;
+    margin: 0px;
+    color: #19191D;
+    font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 13px; /* LOL */
+  }
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.container {
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+header .container {
+    height: 85vh;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navbar {
+    overflow: hidden;
+    position: static;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 20vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: #19191D;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar .navbar-title {
+    font-size: 16pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-stretch: extra-expanded;
+    /*padding-right: 15%;*/
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /*vertical alignment w flex */
+}
+
+.navbar .navbar-links {
+    font-size: 14pt;
+    text-transform: lowercase;
+    /*padding-left: 30%;*/
+    display: flex;
+    vertical-align: middle;
+    text-align: right;
+    align-items:center;
+}
+
+.navbar .navbar-links a {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 2vw;
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header.masthead {
+    background-color: #FFFFFF;
+    background-position: center center;
+    /*display: -ms-flexbox;
+    display: flex;*/
+}
+
+header h1, p {
+    width: 100%;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
