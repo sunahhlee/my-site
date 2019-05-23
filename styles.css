@@ -1,3 +1,5 @@
+@import url('https://fonts.google.com/specimen/Raleway?selection.family=Raleway');
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,29 +10,28 @@ body {
     margin: 0px;
     color: #19191D;
     overflow: scroll;
-    font-family: 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    font-family: 'Raleway', 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    /*font-style: normal;*/
+    /*font-weight: 100;*/
     /*Borken -- NOT AVENIR NEXT. Roboto???*/
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   body {
-      font-size: 11px; /* LOL */
+      font-size: 11px;
   }
-}
+}*/
 
 h1 {
-    font-size: 3.1em;
-    width: 100%;
+    font-size: 3.3em;
 }
 
 h2 {
-    font-size: 1.9em;
-    width: 100%;
+    font-size: 1.5em;
 }
 
 p {
     font-size: 1.3em;
-    width: 100%;
 }
 
 h4 {
@@ -45,6 +46,8 @@ h4 {
 a {
     text-decoration: none;
     list-style-type: none;
+    font-weight: 600;
+    color: #FF8002;
     /*width: 100%;*/
 }
 
@@ -54,25 +57,31 @@ section {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 16%;
+    margin-right: 16%;
 }
 
-.row {
-    display: -ms-flexbox;
+
+.container { /*holds each section */
+    /*carried over form SECtION*/
+    background-position: center center;
+    height: 100vh;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    margin-left: 16%;
+    margin-right: 16%;
 
-.container { /*holds each "page" */
-    background-color: #FFFFFF;
     /*height: 100vh; is this necessary i have under section*/
+
     display: flex;
+    flex-direction: column;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
     /*margin-left: 20%; included under section!!
     margin-right: 20%;*/
+    /*background-color: #939586*/
+
 }
 
 .navbar {
@@ -88,11 +97,12 @@ section {
     width: 100%;
 
     height: 12vh;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #FFFFFF;
+    /*background: rgba(42,45,85, 1);*/
 }
 
 .navbar a {
-    color: #19191D;
+    color: #000000;
     /*text-decoration: none;
     list-style-type: none;*/
     text-align: center;
@@ -102,7 +112,7 @@ section {
     font-size: 16pt;
     font-weight: 300;
     text-transform: uppercase;
-    font-stretch: extra-expanded;
+    /*font-stretch: extra-expanded;*/
     /*padding-right: 15%;*/
     display: flex;
     flex-wrap: nowrap;
@@ -122,7 +132,7 @@ section {
 .navbar .navbar-links a {
     text-decoration: none;
     list-style-type: none;
-    padding-left: 2vw;
+    padding-left: 4vw;
     display: inline-block;
 }
 
@@ -138,11 +148,6 @@ hr {
 
 }
 
-#home h2 {
-    /*"take a look at my work"*/
-    padding: 0px;
-    margin: 20px 0 10px 0;
-}
 
 #header-down-btn {
     width: 100%;
@@ -160,11 +165,12 @@ hr {
 
 .grid-container {
     display: flex;
-    flex-wrap: wrap;
+    background-color: #000000;
+    /*flex-wrap: wrap;
+    justify-content: space-between;*/
+    flex-direction: column;
     margin-top: -2.1%;
-    /*justify-content: space-around;*/
-    justify-content: center;
-    align-content: center;
+    width: 100%;
 }
 
 .box {
@@ -173,7 +179,7 @@ hr {
     position: relative;
     overflow: scroll;
     padding: 0 0.5% 0 0.5%;
-    margin: 0 1.1% 0 1.1%;
+    /*margin: 0 1.1% 0 1.1%;*/
     /*padding: 0.5%;*/
     background-color: #AAAAAA;
     justify-content: center; /* align horizontal */
@@ -190,3 +196,49 @@ hr {
     width: 100%;
 
 }*/
+
+.projects-row {
+    /*display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    position: relative;
+    background-position: center center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: #947474*/
+}
+
+.projects-row-item {
+    width: 27%;
+    /*background-color: #947411*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.scale-image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.home-image {
+    border-radius: 50%;
+    width: 40vh;
+    height: 40vh;
+    /*background-color: #838225;*/
+    padding: 0;
+    margin: 0;
+}
+
+.text-block {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: #995758;*/
+}
