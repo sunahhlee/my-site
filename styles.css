@@ -11,6 +11,7 @@ body {
     color: #19191D;
     overflow: scroll;
     font-family: 'Raleway', 'Avenir Next', 'Helvetica', 'Sans-Serif';
+
     /*font-style: normal;*/
     /*font-weight: 100;*/
     /*Borken -- NOT AVENIR NEXT. Roboto???*/
@@ -22,16 +23,32 @@ body {
   }
 }*/
 
+/*hi im sun ah only*/
 h1 {
     font-size: 3.3em;
+    padding-bottom: 0;
 }
 
+/*sub heads*/
 h2 {
-    font-size: 1.5em;
+    font-size: 1.33em;
+    font-weight: 400;
+}
+
+/*projects: project titles*/
+h3 {
+    font-size: 2em;
+}
+
+/*projects: start dates*/
+h4 {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 h4 {
@@ -47,7 +64,7 @@ a {
     text-decoration: none;
     list-style-type: none;
     font-weight: 600;
-    color: #FF8002;
+    color: #FF8002; /* orange links */
     /*width: 100%;*/
 }
 
@@ -57,8 +74,8 @@ section {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: 16vw;
+    margin-right: 16vw;
 }
 
 
@@ -69,10 +86,8 @@ section {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-    margin-left: 16%;
-    margin-right: 16%;
-
-    /*height: 100vh; is this necessary i have under section*/
+    margin: 0% 13% 0 13%;
+    /*originally 16perc for left and right*/
 
     display: flex;
     flex-direction: column;
@@ -80,7 +95,7 @@ section {
     align-items: center; /* align vertical */
     /*margin-left: 20%; included under section!!
     margin-right: 20%;*/
-    /*background-color: #939586*/
+    /*background-color: #EEEEEE;*/
 
 }
 
@@ -97,8 +112,8 @@ section {
     width: 100%;
 
     height: 12vh;
-    background-color: #FFFFFF;
-    /*background: rgba(42,45,85, 1);*/
+    background: rgba(255,255,255, .5);
+    z-index: 1;
 }
 
 .navbar a {
@@ -163,16 +178,6 @@ hr {
   padding-top: 102px;
 }
 
-.grid-container {
-    display: flex;
-    background-color: #000000;
-    /*flex-wrap: wrap;
-    justify-content: space-between;*/
-    flex-direction: column;
-    margin-top: -2.1%;
-    width: 100%;
-}
-
 .box {
     width: 16vw;
     height: 16vw;
@@ -198,26 +203,24 @@ hr {
 }*/
 
 .projects-row {
-    /*display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;*/
-    position: relative;
     background-position: center center;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    /*background-color: #947474*/
+    justify-content: space-around;
+    /*background-color: #947474;*/
 }
 
-.projects-row-item {
-    width: 27%;
-    /*background-color: #947411*/
+.projects-row-column {
+    max-width: 50%;
+    /*background-color: #947411;*/
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    /*flex-direction: column;*/
+    flex-flow: column;
+    text-align: left;
+    justify-content: flex-start;
+    max-height: 70vh;
+
 }
 
 .scale-image {
@@ -228,10 +231,12 @@ hr {
 
 .home-image {
     border-radius: 50%;
-    width: 40vh;
-    height: 40vh;
+    min-width: 200px;
+    min-height: 200px;
+    width: 20vw;
+    height: 20vw;
     /*background-color: #838225;*/
-    padding: 0;
+    padding: 4%;
     margin: 0;
 }
 
@@ -241,4 +246,42 @@ hr {
     flex-direction: column;
     justify-content: center;
     /*background-color: #995758;*/
+}
+
+.project {
+    align-self: flex-start;
+    margin: 0;
+    padding: 5%;
+    height: 50%;
+    background-color: #FFE4C9;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 4px;
+    overflow: hidden;
+}
+
+.projects-row-column h3 {
+    padding: 0 0 2% 0;
+    margin: 0;
+}
+
+.projects-row-column h4 {
+    padding: 0 0 5% 0;
+    margin: 0;
+}
+
+.projects-row-column p {
+    padding: 0;
+    margin: 0;
+}
+
+#proj-right {
+    height: 100%;
+}
+
+#proj-container {
+    position: fixed;
+    top: 15vh;
+    margin-top: -15vh;
+    padding-top: 1vh;
 }
