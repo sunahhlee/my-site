@@ -261,7 +261,7 @@ hr {
     border-style: solid;
     border-color: #FFFFFF;
     border-width: 4px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .projects-row-column h3 {
