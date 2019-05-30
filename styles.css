@@ -8,12 +8,9 @@ html {
 body {
     height: 100%;
     margin: 0px;
-    /*color: #212121;*/
     color: #383838;
     overflow: scroll;
     font-family: 'Raleway', 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
-    /*font-style: normal;*/
-    /*font-weight: 100;*/
 }
 
 /*@media screen and (max-width: 600px) {
