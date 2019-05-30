@@ -8,13 +8,12 @@ html {
 body {
     height: 100%;
     margin: 0px;
-    color: #19191D;
+    /*color: #212121;*/
+    color: #383838;
     overflow: scroll;
     font-family: 'Raleway', 'Avenir Next', 'Helvetica', 'Sans-Serif';
-
     /*font-style: normal;*/
     /*font-weight: 100;*/
-    /*Borken -- NOT AVENIR NEXT. Roboto???*/
 }
 
 /*@media screen and (max-width: 600px) {
@@ -25,19 +24,22 @@ body {
 
 /*hi im sun ah only*/
 h1 {
-    font-size: 3.3em;
+    font-size: 3.4em;
     padding-bottom: 0;
+    margin-bottom: 0;
+    color: #000000;
 }
 
 /*sub heads*/
 h2 {
-    font-size: 1.33em;
+    font-size: 1.30em;
     font-weight: 400;
 }
 
 /*projects: project titles*/
 h3 {
-    font-size: 2em;
+    font-size: 1.9em;
+    color: #000000;
 }
 
 /*projects: start dates*/
@@ -48,28 +50,24 @@ h4 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 h4 {
-    /*SPECIFICALLY FOR GRID*/
     font-size: 1.03em;
     font-weight: 400;
     line-height: 1.1em;
-    /*don't think width here does anything*/
-    /*width: 100%;*/
 }
 
+/*all hyperlinks*/
 a {
-    text-decoration: none;
+    text-decoration: underline;
     list-style-type: none;
-    font-weight: 600;
-    color: #FF8002; /* orange links */
-    /*width: 100%;*/
-}
-
-.project a {
+    font-weight: 400;
     color: #000000;
+    /*color: #FF8002; */
+    /* orange links */
+    /*width: 100%;*/
 }
 
 section {
@@ -128,14 +126,17 @@ section {
 }
 
 .navbar .navbar-title {
-    font-size: 16pt;
-    font-weight: 300;
-    text-transform: uppercase;
-    /*font-stretch: extra-expanded;*/
     /*padding-right: 15%;*/
     display: flex;
     flex-wrap: nowrap;
     align-items: center; /*vertical alignment w flex */
+}
+
+.navbar .navbar-title a {
+    font-size: 18pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .navbar .navbar-links {
@@ -182,49 +183,34 @@ hr {
   padding-top: 102px;
 }
 
-.box {
-    width: 16vw;
-    height: 16vw;
-    position: relative;
-    overflow: scroll;
-    padding: 0 0.5% 0 0.5%;
-    /*margin: 0 1.1% 0 1.1%;*/
-    /*padding: 0.5%;*/
-    background-color: #AAAAAA;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-}
-
-.bottom-box {
-    margin-top: 2.2%;
-}
-
-/*.grid-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-}*/
-
 .projects-row {
     background-position: center center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    /*background-color: #947474;*/
+}
+
+#column-container {
+    justify-content: center;
 }
 
 .projects-row-column {
-    max-width: 50%;
-    /*background-color: #947411;*/
+    width: 28%;
     display: flex;
     /*flex-direction: column;*/
+    margin: 1%;
     flex-flow: column;
     text-align: left;
     justify-content: flex-start;
-    max-height: 70vh;
+    /*max-height: 60vh;*/
+    height: 60vh;
+    box-shadow: 0 15px 20px rgba(0,0,0,.1);
+}
 
+.project-img {
+    height: 40%;
+    background-color: #4992F2;
 }
 
 .scale-image {
@@ -244,6 +230,22 @@ hr {
     margin: 0;
 }
 
+.icon-bar {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-style: italic;
+    vertical-align: middle;
+}
+
+
+.icon-bar img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
 .text-block {
     max-width: 60%;
     display: flex;
@@ -255,13 +257,9 @@ hr {
 .project {
     align-self: flex-start;
     margin: 0;
-    padding: 5%;
-    height: 50%;
-    background-color: #FFE4C9;
-    border-style: solid;
-    border-color: #FFFFFF;
-    border-width: 4px;
+    padding: 9%;
     overflow: scroll;
+    height: 50%;
 }
 
 .projects-row-column h3 {
@@ -275,12 +273,8 @@ hr {
 }
 
 .projects-row-column p {
-    padding: 0;
+    padding: 3% 0 0 0;
     margin: 0;
-}
-
-#proj-right {
-    height: 100%;
 }
 
 #proj-container {
