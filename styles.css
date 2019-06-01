@@ -6,29 +6,42 @@ body {
     font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
 }
 
-/*Desktops */
-@media screen and (min-width: 1000px) {
+/*Laptops */
+@media screen and (min-width: 1200px) {
   body {
       font-size: 16px;
   }
 }
 
-/*Tablets ish*/
-@media screen and (min-width: 750px) and (max-width: 1024px) {
+/*Mobile*/
+@media screen and (max-width: 845px) {
   body {
       font-size: 13px;
   }
+  .navbar .navbar-links a {
+      font-size: 0.8em;
+  }
+  .content .container { /*holds each section */
+      margin: 0% 5% 0 5%;
+      width: 90%;
+  }
+  .content .container .projects-row .text-block {
+      text-align: center;
+  }
 }
 
-@media screen and (max-width: 750px) {
-  body {
-      font-size: 11px;
-  }
+/*this is where text starts pushing up*/
+@media screen and (max-width: 558px) {
+    .content .container { /*holds each section */
+        margin: 5vh 0% 0% 0%;
+        width: 100%;
+    }
 }
 
 /*hi im sun ah only*/
 h1 {
-    font-size: 3.4em;
+    font-size: 3.6em;
+    margin-top: 2vh;
     padding-bottom: 0;
     margin-bottom: 0;
     /*color: #000000;*/
@@ -39,9 +52,8 @@ h1 {
 
 /*index.html subhead*/
 h2 {
-    font-size: 1.30em;
-    font-weight: 300;
-    line-height: 1.33;
+    font-size: 1.25em;
+    line-height: 1.35;
 }
 
 /*project titles*/
@@ -73,22 +85,9 @@ a {
     color: rgba(0,0,0,0.87);
     /*color: #FF8002; */
     /* orange links */
-    /*width: 100%;*/
 }
-
-section {
-    background-position: center center;
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    margin-left: 16vw;
-    margin-right: 16vw;
-}
-
 
 .container { /*holds each section */
-    /*carried over form SECtION*/
     background-position: center center;
     height: 100vh;
     display: flex;
@@ -135,7 +134,7 @@ section {
 }
 
 .navbar .navbar-title a {
-    font-size: 18pt;
+    font-size: 1.4em;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
@@ -235,7 +234,6 @@ hr {
 .icon-bar {
     padding-bottom: 20px;
     font-size: 18px;
-    font-style: italic;
     vertical-align: middle;
 }
 
