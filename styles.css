@@ -1,7 +1,7 @@
 body {
     height: 100%;
     margin: 0px;
-    color: #383838;
+    color: rgba(0,0,0,0.87);
     overflow: scroll;
     font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
 }
@@ -31,7 +31,7 @@ h1 {
     font-size: 3.4em;
     padding-bottom: 0;
     margin-bottom: 0;
-    color: #000000;
+    /*color: #000000;*/
     font-family: 'Raleway';
     font-weight: 700;
 
@@ -46,8 +46,9 @@ h2 {
 /*projects: project titles*/
 h3 {
     font-size: 1.9em;
+    font-family: 'Raleway';
     font-weight: 600;
-    color: #000000;
+    /*color: #000000;*/
 }
 
 /*projects: start dates*/
@@ -72,7 +73,7 @@ a {
     text-decoration: underline;
     list-style-type: none;
     font-weight: 400;
-    color: #000000;
+    /*color: #000000;*/
     /*color: #FF8002; */
     /* orange links */
     /*width: 100%;*/
