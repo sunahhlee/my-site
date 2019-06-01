@@ -3,7 +3,7 @@ body {
     margin: 0px;
     color: #383838;
     overflow: scroll;
-    font-family: 'Raleway', 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
 }
 
 /*Desktops */
@@ -32,6 +32,9 @@ h1 {
     padding-bottom: 0;
     margin-bottom: 0;
     color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+
 }
 
 /*sub heads*/
