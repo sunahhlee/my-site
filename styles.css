@@ -31,6 +31,8 @@ body {
   /*disable hover animations for mobile*/
   .projects-row-column {
     transform: none;
+    -webkit-transition: none;
+    transform: scale(1);
   }
 }
 
