@@ -11,6 +11,12 @@ body {
       font-size: 16px;
       overflow-y: hidden; /* while containers aren't pushed */
   }
+  .projects-row-column { /* only enable hover transformation for laptop */
+      transition: transform .4s;
+  }
+  .projects-row-column:hover {
+    transform: scale(1.05);
+  }
 }
 
 /*Mobile*/
@@ -27,12 +33,6 @@ body {
   }
   .content .container .projects-row .text-block {
       text-align: center;
-  }
-  /*disable hover animations for mobile*/
-  .projects-row-column {
-    transform: none;
-    -webkit-transition: none;
-    transform: scale(1);
   }
 }
 
@@ -201,13 +201,8 @@ a {
     justify-content: flex-start;
     height: 60vh;
     box-shadow: 0 15px 20px rgba(0,0,0,.1);
-    transition: transform .3s;
+    /*transition: transform .3s;*/
 }
-
-.projects-row-column:hover {
-  transform: scale(1.05);
-}
-
 .project-img {
     height: 40%;
     background-color: #4992F2;
