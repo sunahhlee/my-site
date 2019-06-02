@@ -14,14 +14,14 @@ body {
 }
 
 /*Mobile*/
-@media screen and (max-width: 845px) {
+@media screen and (min-width: 559px) and (max-width: 845px) {
   body {
       font-size: 13px;
   }
   .navbar .navbar-links a {
       font-size: 0.8em;
   }
-  .content .container { /*holds each section */
+  .content #title-container { /*index.html */
       margin: 0% 5% 0 5%;
       width: 90%;
   }
@@ -32,12 +32,33 @@ body {
 
 /*this is where text starts pushing up*/
 @media screen and (max-width: 558px) {
-    .content .container { /*holds each section */
-        margin: 5vh 0% 0% 0%;
-        width: 100%;
+
+    /*INHERITED ABOVE*/
+    body {
+        font-size: 13px;
     }
+    a {
+        font-size: inherit;
+        line-height: inherit;
+    }
+    .navbar .navbar-links a {
+        font-size: 0.8em;
+    }
+    .content .container .projects-row .text-block {
+        text-align: center;
+    }
+
+    /*NEW*/
+    .content #title-container { /* just for index.html */
+        margin: 5vh 0% 0% -2%;
+        width: 104%;
+    }
+
 }
 
+.title {
+    width: inherit;
+}
 /*hi im sun ah only*/
 h1 {
     font-size: 3.6em;
@@ -52,6 +73,7 @@ h1 {
 
 /*index.html subhead*/
 h2 {
+    font-weight: 400;
     font-size: 1.25em;
     line-height: 1.35;
 }
@@ -121,13 +143,10 @@ a {
 
 .navbar a {
     color: #000000;
-    /*text-decoration: none;
-    list-style-type: none;*/
     text-align: center;
 }
 
 .navbar .navbar-title {
-    /*padding-right: 15%;*/
     display: flex;
     flex-wrap: nowrap;
     align-items: center; /*vertical alignment w flex */
@@ -194,17 +213,20 @@ hr {
 
 #column-container {
     justify-content: center;
+    width: 85%;
+    position: fixed;
+    top: 15%;
 }
 
 .projects-row-column {
-    width: 28%;
+    width: 36vh;
     display: flex;
     /*flex-direction: column;*/
     margin: 1%;
+    padding: 0;
     flex-flow: column;
     text-align: left;
     justify-content: flex-start;
-    /*max-height: 60vh;*/
     height: 60vh;
     box-shadow: 0 15px 20px rgba(0,0,0,.1);
 }
@@ -279,7 +301,6 @@ hr {
 
 #proj-container {
     position: fixed;
-    top: 15vh;
-    margin-top: -15vh;
+    top: 0%;
     padding-top: 1vh;
 }
