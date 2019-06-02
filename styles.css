@@ -1,8 +1,6 @@
 body {
-    /*height: 100%;*/
     margin: 0px;
     color: rgba(0,0,0,0.87);
-    overflow: scroll;
     font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
 }
 
@@ -47,25 +45,20 @@ body {
     .content .container .projects-row .text-block {
         text-align: center;
     }
-
     /*NEW*/
     .content #title-container { /* just for index.html */
-        margin: 5vh 0% 0% -2%;
+        margin: 4vh 0% 0% -2%;
         width: 104%;
     }
 
 }
 
-.title {
-    width: inherit;
-}
 /*hi im sun ah only*/
 h1 {
     font-size: 3.6em;
     margin-top: 2vh;
     padding-bottom: 0;
     margin-bottom: 0;
-    /*color: #000000;*/
     font-family: 'Raleway';
     font-weight: 700;
 
@@ -80,7 +73,7 @@ h2 {
 
 /*project titles*/
 h3 {
-    font-size: 1.9em;
+    font-size: 2em;
     font-family: 'Raleway';
     font-weight: 600;
 }
@@ -89,7 +82,6 @@ h3 {
 h4 {
     font-size: 1.03em;
     font-weight: 400;
-    line-height: 1.1em;
     font-style: italic;
 }
 
@@ -98,59 +90,47 @@ p {
     font-size: 0.9em;
 }
 
-
 /*all hyperlinks*/
 a {
     text-decoration: underline;
     list-style-type: none;
     font-weight: 400;
     color: rgba(0,0,0,0.87);
-    /*color: #FF8002; */
-    /* orange links */
 }
 
-.container { /*holds each section */
+.container { /*holds each section, excluding navbar */
     background-position: center center;
-    /*min-height: 100vh;*/
+    position: relative;
+    top: 0;
+    height: 100vh;
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
     margin: 0% 13% 0 13%;
     width: 74%;
-    /*originally 16perc for left and right*/
-
     display: flex;
     flex-direction: column;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    overflow: auto;
 }
 
 .navbar {
     overflow: hidden;
-    /*position: static;*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0% 13% 0% 13%;
+    margin: 0%;
 
     position: fixed;
     top: 0;
-    width: 74%;
+    width: 100%;
     height: 12vh;
-    background: rgba(255,255,255, .5);
+    background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
+    background: -webkit-linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
     z-index: 1;
-}
-
-.navbar a {
-    color: #000000;
-    text-align: center;
 }
 
 .navbar .navbar-title {
     display: flex;
     flex-wrap: nowrap;
     align-items: center; /*vertical alignment w flex */
+    margin-left: 13%;
 }
 
 .navbar .navbar-title a {
@@ -163,11 +143,10 @@ a {
 .navbar .navbar-links {
     font-size: 14pt;
     text-transform: lowercase;
-    /*padding-left: 30%;*/
     display: flex;
     vertical-align: middle;
-    text-align: right;
     align-items:center;
+    margin-right: 13%;
 }
 
 .navbar .navbar-links a {
@@ -189,19 +168,19 @@ hr {
 
 }
 
-
-#header-down-btn {
-    width: 100%;
-    color: #19191D;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    padding: 0px;
-    margin: 0px;
-    font-size: 3.1em;
+.content {
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
-.sticky + .content {
-  padding-top: 102px;
+#title-container {
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+#proj-container {
+    position: absolute;
+    padding-top: 12vh;
 }
 
 .projects-row {
@@ -212,36 +191,21 @@ hr {
     justify-content: space-around;
 }
 
-#column-container {
-    justify-content: center;
-    width: 85%;
-    /*position: fixed;
-    top: 12%;*/
-}
-
 .projects-row-column {
     width: 36vh;
     display: flex;
-    /*flex-direction: column;*/
-    margin: 1%;
+    margin: 1% 1% 3% 1%;
     padding: 0;
     flex-flow: column;
     text-align: left;
     justify-content: flex-start;
     height: 60vh;
     box-shadow: 0 15px 20px rgba(0,0,0,.1);
-    overflow: auto;
 }
 
 .project-img {
     height: 40%;
     background-color: #4992F2;
-}
-
-.scale-image {
-    border-radius: 50%;
-    width: 100%;
-    height: auto;
 }
 
 .home-image {
@@ -250,7 +214,6 @@ hr {
     min-height: 200px;
     width: 20vw;
     height: 20vw;
-    /*background-color: #838225;*/
     padding: 4%;
     margin: 0;
 }
@@ -261,12 +224,9 @@ hr {
     vertical-align: middle;
 }
 
-
 .icon-bar img {
     width: 30px;
     height: 30px;
-    margin: 0;
-    vertical-align: middle;
     padding-right: 8px;
 }
 
@@ -283,7 +243,7 @@ hr {
     margin: 0;
     padding: 9%;
     overflow: scroll;
-    min-height: 50%;
+    height: 50%;
 }
 
 .projects-row-column h3 {
@@ -299,11 +259,4 @@ hr {
 .projects-row-column p {
     padding: 3% 0 0 0;
     margin: 0;
-}
-
-#proj-container {
-    position: fixed;
-    top: 0%;
-    padding-top: 1vh;
-    overflow: auto;
 }
