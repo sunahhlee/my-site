@@ -2,6 +2,7 @@ body {
     margin: 0px;
     color: rgba(0,0,0,0.87);
     font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    overflow-x: hidden;
 }
 
 /*Laptops */
@@ -14,7 +15,7 @@ body {
 /*Mobile*/
 @media screen and (min-width: 559px) and (max-width: 845px) {
   body {
-      font-size: 13px;
+      font-size: 14px;
   }
   .navbar .navbar-links a {
       font-size: 0.8em;
@@ -33,7 +34,7 @@ body {
 
     /*INHERITED ABOVE*/
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
     a {
         font-size: inherit;
@@ -87,7 +88,7 @@ h4 {
 
 /*project descriptions*/
 p {
-    font-size: 0.9em;
+    font-size: .96em;
 }
 
 /*all hyperlinks*/
@@ -96,6 +97,7 @@ a {
     list-style-type: none;
     font-weight: 400;
     color: rgba(0,0,0,0.87);
+    position: relative;
 }
 
 .container { /*holds each section, excluding navbar */
@@ -124,6 +126,9 @@ a {
     background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
     background: -webkit-linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
     z-index: 1;
+
+    animation-delay: 0s;
+    animation-duration: 0.2s;
 }
 
 .navbar .navbar-title {
@@ -152,20 +157,7 @@ a {
 .navbar .navbar-links a {
     text-decoration: none;
     list-style-type: none;
-    padding-left: 4vw;
     display: inline-block;
-}
-
-.text-center {
-    text-align: center;
-}
-
-hr {
-    min-width: 50px;
-    max-width: 50px;
-    border-width: 2pt;
-    border-color: #19191D;
-
 }
 
 .content {
@@ -189,6 +181,8 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    animation-delay: 0.2s;
+    animation-duration: 0.2s;
 }
 
 .projects-row-column {
@@ -201,6 +195,11 @@ hr {
     justify-content: flex-start;
     height: 60vh;
     box-shadow: 0 15px 20px rgba(0,0,0,.1);
+    transition: transform .3s;
+}
+
+.projects-row-column:hover {
+  transform: scale(1.05);
 }
 
 .project-img {
@@ -242,9 +241,10 @@ hr {
     align-self: flex-start;
     margin: 0;
     padding: 9%;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 50%;
 }
+
 
 .projects-row-column h3 {
     padding: 0 0 2% 0;
