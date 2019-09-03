@@ -264,7 +264,7 @@ a {
 
 /*ANIMATION */
 .animated {
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-fill-mode: both;
     -webkit-animation-duration: 0.8s;
     -webkit-animation-fill-mode: both
@@ -272,7 +272,7 @@ a {
 
 .animated-delay {
     animation-delay: 0.5s;
-    animation-duration: 0.8s;
+    animation-duration: 0.7s;
     animation-fill-mode: both;
     -webkit-animation-duration: 0.8s;
     -webkit-animation-fill-mode: both
