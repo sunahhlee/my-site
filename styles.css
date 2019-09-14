@@ -1,14 +1,14 @@
 body {
     margin: 0px;
-    color: rgba(0,0,0,0.87);
-    font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
+    background-color: #FAFAFA;
+    font-family: 'Roboto', 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
     overflow-y: scroll;
 }
 
 /*Laptops */
 @media screen and (min-width: 1200px) {
   body {
-      font-size: 16px;
+      font-size: 18px;
       overflow-y: hidden; /* while containers aren't pushed */
   }
   .projects-row-column { /* only enable hover transformation for laptop */
@@ -19,262 +19,159 @@ body {
   }
 }
 
-/*Mobile*/
-@media screen and (min-width: 559px) and (max-width: 845px) {
-  body {
-      font-size: 14px;
-  }
-  .navbar .navbar-links a {
-      font-size: 0.8em;
-  }
-  .content #title-container { /*index.html */
-      margin: 0% 5% 0 5%;
-      width: 90%;
-  }
-  .content .container .projects-row .text-block {
-      text-align: center;
-  }
+@media screen and (min-width: 845px) and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
 }
 
-/*this is where text starts pushing up*/
-@media screen and (max-width: 558px) {
 
-    /*INHERITED ABOVE*/
+/*Mobile*/
+@media screen and (min-width: 559px) and (max-width: 845px) {
     body {
         font-size: 14px;
     }
-    a {
-        font-size: inherit;
-        line-height: inherit;
-    }
-    .navbar .navbar-links a {
-        font-size: 0.8em;
-    }
-    .content .container .projects-row .text-block {
-        text-align: center;
-    }
-    /*NEW*/
-    .content #title-container { /* just for index.html */
-        margin: 4vh 0% 0% -2%;
-        width: 104%;
+
+    .content {
+        margin: 0% 2.5% 0% 2.5%;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* don't need align-content for 1 liner */
+        align-items: flex-start;
     }
 
+    .block-R {
+        width: 100%;
+    }
+
+    .block-L {
+        width: 100%;
+    }
 }
 
-/*hi im sun ah only*/
+/*For the headline*/
 h1 {
-    font-size: 3.6em;
-    margin-top: 2vh;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    font-size: 3.2em;
+    padding: 0px 0px 2px 0px;
+    margin: 0px;
     font-family: 'Raleway';
-    font-weight: 700;
-
+    font-weight: 400;
 }
 
-/*index.html subhead*/
 h2 {
-    font-weight: 400;
-    font-size: 1.25em;
-    line-height: 1.35;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 110%;
 }
 
-/*project titles*/
-h3 {
-    font-size: 2em;
-    font-family: 'Raleway';
-    font-weight: 600;
+/* pretty much everything else */
+li {
+    font-size: 1.15em;
+    padding: 0% 0% 2% 0%;
+    text-overflow: wrap;
+    max-width: 38%;
 }
 
-/*project start dates & project page subhead*/
-h4 {
-    font-size: 1.03em;
-    font-weight: 400;
-    font-style: italic;
-}
-
-/*project descriptions*/
-p {
-    font-size: .96em;
-}
-
-/*all hyperlinks*/
+/*hyperlinks: */
 a {
     text-decoration: underline;
     list-style-type: none;
     font-weight: 400;
-    color: rgba(0,0,0,0.87);
     position: relative;
+    text-decoration: none;
+    color: #000000;
 }
 
-.container { /*holds each section, excluding navbar */
-    background-position: center center;
-    position: relative;
-    top: 0;
-    height: 100vh;
+.content { /* holds and fills everything */
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
-    margin: 0% 13% 0 13%;
-    width: 74%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* don't need align-content for 1 liner */
+    align-items: flex-start;
+}
+
+.block-L {
     display: flex;
     flex-direction: column;
-}
-
-.navbar {
-    overflow: hidden;
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0%;
+    width: 22%;
+    max-width: 20%;
+    height: 100vh;
+    margin: 9% 2% 0 10%;
 
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 12vh;
-    background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
-    background: -webkit-linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
-    z-index: 1;
 }
 
-.navbar .navbar-title {
+.block-R {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center; /*vertical alignment w flex */
-    margin-left: 13%;
-}
+    flex: 1.1
+    max-width: 40%;
+    height: 100vh;
+    margin: 8% 0% 0% 2%;
+    padding: 0%;
 
-.navbar .navbar-title a {
-    font-size: 1.4em;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navbar .navbar-links {
-    font-size: 14pt;
-    text-transform: lowercase;
-    display: flex;
-    vertical-align: middle;
-    align-items:center;
-    margin-right: 13%;
-}
-
-.navbar .navbar-links a {
-    text-decoration: none;
-    list-style-type: none;
-    display: inline-block;
-}
-
-.content + #title-container {
-    overflow-x: hidden;
-}
-
-.content + #proj-container {
-    overflow-x: scroll; /* enable only for projects page */
-}
-
-#title-container {
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-}
-
-#proj-container {
-    position: absolute;
-    padding-top: 12vh;
-}
-
-.projects-row {
-    background-position: center center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-.projects-row-column {
-    width: 36vh;
-    display: flex;
-    margin: 1% 1% 5% 1%;
-    padding: 0;
-    flex-flow: column;
-    text-align: left;
-    justify-content: flex-start;
-    height: 60vh;
-    box-shadow: 0 15px 20px rgba(0,0,0,.1);
-    /*transition: transform .3s;*/
-}
-.project-img {
-    height: 40%;
-    background-color: #4992F2;
 }
 
 .home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 8%; */
     border-radius: 50%;
-    min-width: 200px;
-    min-height: 200px;
-    width: 20vw;
-    height: 20vw;
-    padding: 4%;
-    margin: 0;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 95%;
+    max-height: auto;
 }
 
 .icon-bar {
-    padding-bottom: 20px;
-    font-size: 18px;
-    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .icon-bar img {
-    width: 30px;
-    height: 30px;
-    padding-right: 8px;
+    min-width: 30px;
+    min-height: 30px;
+    max-height: 15%;
+    max-width: 15%;
+    padding: 0 2% 0 2%;
 }
 
-.text-block {
-    max-width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*background-color: #995758;*/
+.bullets {
+    padding: 4% 0 0 0%;
+    line-height: 123%; /* spacing btwn paragraph */
+    text-overflow: wrap;
 }
 
-.project {
-    align-self: flex-start;
-    margin: 0;
-    padding: 9%;
-    overflow-y: scroll;
-    height: 50%;
+hr.modify {
+  background-color: purple;
+  max-width: 23%;
+  margin: 2% 0 0 0;
+  height: 10px;
+  border-top: 0px;
 }
 
-
-.projects-row-column h3 {
-    padding: 0 0 2% 0;
-    margin: 0;
-}
-
-.projects-row-column h4 {
-    padding: 0 0 5% 0;
-    margin: 0;
-}
-
-.projects-row-column p {
-    padding: 3% 0 0 0;
-    margin: 0;
-}
 
 /*ANIMATION */
 .animated {
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.3s;
     -webkit-animation-fill-mode: both
 }
 
 .animated-delay {
     animation-delay: 0.3s;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.3s;
     -webkit-animation-fill-mode: both
 }
 
@@ -282,7 +179,7 @@ a {
 
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,80px,0)
+        transform: translate3d(0,60px,0)
     }
 
     to {
@@ -293,7 +190,7 @@ a {
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,80px,0)
+        transform: translate3d(0,60px,0)
     }
 
     to {
@@ -311,38 +208,4 @@ a {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
-}
-
-/*FADE DOWN*/
-@keyframes fadeInDown {
-    from {
-        transform: translate3d(0,-60px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInDown {
-    from {
-        transform: translate3d(0,-60px,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-
-.animatedFadeInDown {
-    opacity: 0
-}
-
-.fadeInDown {
-    opacity: 0;
-    animation-name: fadeInDown;
-    -webkit-animation-name: fadeInDown;
 }
