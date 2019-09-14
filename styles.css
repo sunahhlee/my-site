@@ -1,14 +1,20 @@
 body {
     margin: 0px;
     color: rgba(0,0,0,0.87);
+    background-color: #FAFAFA;
     font-family: 'Lato', 'Avenir Next', 'Helvetica', 'Sans-Serif';
     overflow-y: scroll;
 }
 
 /*Laptops */
 @media screen and (min-width: 1200px) {
+    hr {
+        background-color: purple;
+        float: left;
+
+    }
   body {
-      font-size: 16px;
+      font-size: 18px;
       overflow-y: hidden; /* while containers aren't pushed */
   }
   .projects-row-column { /* only enable hover transformation for laptop */
@@ -17,28 +23,26 @@ body {
   .projects-row-column:hover {
     transform: scale(1.05);
   }
+
 }
 
 /*Mobile*/
-@media screen and (min-width: 559px) and (max-width: 845px) {
-  body {
-      font-size: 14px;
-  }
-  .navbar .navbar-links a {
-      font-size: 0.8em;
-  }
-  .content #title-container { /*index.html */
-      margin: 0% 5% 0 5%;
-      width: 90%;
-  }
-  .content .container .projects-row .text-block {
-      text-align: center;
-  }
+@media screen and (min-width: 559px) and (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+    .content #title-container { /*index.html */
+        margin: 0% 5% 0 5%;
+        width: 90%;
+        height: 90%;
+    }
+    .content .container .projects-row .text-block {
+        text-align: center;
+    }
 }
 
 /*this is where text starts pushing up*/
 @media screen and (max-width: 558px) {
-
     /*INHERITED ABOVE*/
     body {
         font-size: 14px;
@@ -46,9 +50,6 @@ body {
     a {
         font-size: inherit;
         line-height: inherit;
-    }
-    .navbar .navbar-links a {
-        font-size: 0.8em;
     }
     .content .container .projects-row .text-block {
         text-align: center;
@@ -63,51 +64,31 @@ body {
 
 /*hi im sun ah only*/
 h1 {
-    font-size: 3.6em;
-    margin-top: 2vh;
+    font-size: 3.4em;
+    margin: 1vh 0 0 0;
     padding-bottom: 0;
-    margin-bottom: 0;
     font-family: 'Raleway';
-    font-weight: 700;
+    font-weight: 400;
 
 }
 
-/*index.html subhead*/
 h2 {
-    font-weight: 400;
-    font-size: 1.25em;
-    line-height: 1.35;
-}
-
-/*project titles*/
-h3 {
-    font-size: 2em;
-    font-family: 'Raleway';
-    font-weight: 600;
-}
-
-/*project start dates & project page subhead*/
-h4 {
     font-size: 1.03em;
-    font-weight: 400;
+    font-weight: 600;
+    margin: 0;
     font-style: italic;
-}
-
-/*project descriptions*/
-p {
-    font-size: .96em;
 }
 
 /*all hyperlinks*/
 a {
-    text-decoration: underline;
+    text-decoration: none;
     list-style-type: none;
     font-weight: 400;
-    color: rgba(0,0,0,0.87);
     position: relative;
+    color: inherit;
 }
 
-.container { /*holds each section, excluding navbar */
+.container { /*holds everything*/
     background-position: center center;
     position: relative;
     top: 0;
@@ -119,67 +100,13 @@ a {
     flex-direction: column;
 }
 
-.navbar {
-    overflow: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0%;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 12vh;
-    background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
-    background: -webkit-linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,1));
-    z-index: 1;
-}
-
-.navbar .navbar-title {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center; /*vertical alignment w flex */
-    margin-left: 13%;
-}
-
-.navbar .navbar-title a {
-    font-size: 1.4em;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navbar .navbar-links {
-    font-size: 14pt;
-    text-transform: lowercase;
-    display: flex;
-    vertical-align: middle;
-    align-items:center;
-    margin-right: 13%;
-}
-
-.navbar .navbar-links a {
-    text-decoration: none;
-    list-style-type: none;
-    display: inline-block;
-}
-
 .content + #title-container {
     overflow-x: hidden;
-}
-
-.content + #proj-container {
-    overflow-x: scroll; /* enable only for projects page */
 }
 
 #title-container {
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-}
-
-#proj-container {
-    position: absolute;
-    padding-top: 12vh;
 }
 
 .projects-row {
@@ -188,34 +115,17 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
-.projects-row-column {
-    width: 36vh;
-    display: flex;
-    margin: 1% 1% 5% 1%;
-    padding: 0;
-    flex-flow: column;
-    text-align: left;
-    justify-content: flex-start;
-    height: 60vh;
-    box-shadow: 0 15px 20px rgba(0,0,0,.1);
-    /*transition: transform .3s;*/
-}
-.project-img {
-    height: 40%;
-    background-color: #4992F2;
-}
-
-.home-image {
+.headshot {
     border-radius: 50%;
     min-width: 200px;
     min-height: 200px;
-    width: 20vw;
-    height: 20vw;
-    padding: 4%;
-    margin: 0;
+    width: 18vw;
+    height: 18vw;
+    max-width: 22vw;
+    max-height: inherit;
+    margin: 0 0 10% 0;
 }
 
 .icon-bar {
@@ -224,9 +134,34 @@ a {
     vertical-align: middle;
 }
 
-.icon-bar img {
-    width: 30px;
-    height: 30px;
+.content .container .projects-row .text-block .icon-bar-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+}
+
+
+li {
+    font-size: 1.2em;
+    padding: 0% 0% 2% 0%;
+    text-overflow: wrap;
+    max-width: 85%;
+}
+
+.icon-bar-icons {
+    padding-bottom: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+
+}
+
+
+.icon-bar-icons img {
+    max-width: 40px;
+    max-height: 40px;
     padding-right: 8px;
 }
 
@@ -238,29 +173,16 @@ a {
     /*background-color: #995758;*/
 }
 
-.project {
-    align-self: flex-start;
-    margin: 0;
-    padding: 9%;
-    overflow-y: scroll;
-    height: 50%;
-}
 
 
-.projects-row-column h3 {
-    padding: 0 0 2% 0;
-    margin: 0;
+
+hr {
+    height: 10px;
+    max-width: 30%;
+    border: 0px;
+    margin: 2% 0 2% 0;
 }
 
-.projects-row-column h4 {
-    padding: 0 0 5% 0;
-    margin: 0;
-}
-
-.projects-row-column p {
-    padding: 3% 0 0 0;
-    margin: 0;
-}
 
 /*ANIMATION */
 .animated {
